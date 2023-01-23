@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Medication Tracker</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        Medication <br />
+        Tracker
+      </h1>
+      <p></p>
+      <form class="add-medication">
+        <input
+          class="Medication"
+          type="text"
+          name="Medication"
+          placeholder="Enter Medication Name"
+          required
+        />
+
+        <input type="number" name="dose" placeholder="Dose" min="1" />
+        <div class="frequency">
+          <label for="timeframe"> Frequency: </label>
+          <select name="timeframe" id="timeframe">
+            <option value="Once Daily">Once Daily</option>
+            <option value="Twice Daily">Twice Daily</option>
+            <option value="Three Times Daily">Three Times Daily</option>
+            <option value="Four Times Daily">Four Times Daily</option>
+            <option value="Once Weekly">Once Weekly</option>
+            <option value="Twice Weekly">Twice Weekly</option>
+          </select>
+        </div>
+        <input type="submit" value=" + Add Medication" />
+      </form>
+
+      <ul class="medication">
+        <li>Loading..</li>
+      </ul>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
